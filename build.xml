@@ -103,6 +103,7 @@
   <property name="jasper-el.jar" value="${tomcat.build}/lib/jasper-el.jar"/>
 
   <property name="tomcat-dbcp.home" value="${base.path}/tomcat${version.major}-deps/dbcp" />
+  <property name="compiled-dbcp.home" value="${base.path}/compiled-dbcp" />
   <property name="tomcat-dbcp.jar" value="${tomcat-dbcp.home}/tomcat-dbcp.jar"/>
 
   <!-- Standard Source JARs -->
@@ -2800,8 +2801,11 @@ Apache Tomcat ${version} native binaries for Win64 AMD64/EMT64 platform.
            srcdir="${tomcat-dbcp.home}/src/java"
            encoding="ISO-8859-1"
            includeantruntime="false">
-      <include name="**" />
+        <include name="**/org/apache/tomcat/dbcp/pool/*.java" />
     </javac>
+    <copy todir="${tomcat-dbcp.home}/classes/org/apache/tomcat/dbcp">
+      <fileset dir="${compiled-dbcp.home}/classes/org/apache/commons" />
+    </copy>
     <jarIt jarfile="${tomcat-dbcp.jar}"
       filesDir="${tomcat-dbcp.home}/classes"
       filesId="files.tomcat-dbcp" />
