@@ -1,7 +1,6 @@
 # tomcat7.0.82-codeview
-对Tomcat7.0.82版本的源码查看笔记,毕竟水平也是臭的，积累一点是一点，能坚持多少是多少，也不会刻意的去读源码，工作中遇到问题了有时间了就去翻一下。因为个人没有什么代码经验，
-所以只谈问题解决步骤与过程方法，不谈论设计模式等等的问题。
 
+对Tomcat7.0.82版本的源码查看笔记,毕竟水平也是臭的，积累一点是一点，能坚持多少是多少，也不会刻意的去读源码，工作中遇到问题了有时间了就去翻一下，落实一下问题点。因为个人没有什么代码经验， 所以只谈问题解决步骤与过程方法，不谈论设计模式等等的问题。
 
 
 ##  一、基本环境信息
@@ -29,7 +28,7 @@ parallels@parallels-vm:~/workspace/apache-tomcat-7.0.82-src$ tree -L 1
 ├── build.xml
 ├── conf
 ├── CONTRIBUTING.md
-├── java  # 源码目录
+├── java #源码目录
 ├── KEYS
 ├── LICENSE
 ├── logs
@@ -57,18 +56,14 @@ parallels@parallels-vm:~/workspace/apache-tomcat-7.0.82-src$ tree -L 1
 
 ## 四、成果展示实例
 
-![](https://github.com/liuwenru/tomcat7.0.82-codeview/wiki/images/buildsuccess.png)
+![](images/buildsuccess.png)
 
 
 
 ## 五、 笔记目录
 
-- [工程目录编译与搭建](docs/工程目录编译与搭建.md)
-- [Tomcat的启动脚本解析](docs/Tomcat的启动脚本解析.md)
-- [JDK-Tools的使用](docs/JDK-Tools的使用.md)
-- [线上诊断Tomcat的问题-工具与方法.md](docs/线上诊断Tomcat的问题-工具与方法.md)
-- [Tomcat缺失字体问题.md](docs/Tomcat缺失字体问题.md)
 
+笔记目录请查看项目上的`Wiki`目录
 
 
 
